@@ -1,10 +1,12 @@
 import java.text.*;
+import java.util.Scanner;
 
-public class rootCalculating
+public class RootFinding
 {
+	public static Scanner input = new Scanner(System.in);
 	public static void main(String[] args)
 	{
-		double initial = Double.parseDouble(args[0]);
+		double initial = Double.parseDouble(input.nextLine());
 		double guess = initial / 2.0f;
 		DecimalFormat df = new DecimalFormat("#.##");
 		while (true)
