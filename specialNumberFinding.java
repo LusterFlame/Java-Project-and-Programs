@@ -1,14 +1,18 @@
-public class specialNumberFinding
+import java.util.Scanner;
+
+public class SpecialNumberFinding
 {
+	public static Scanner input = new Scanner(System.in);
 	public static void main(String[] args)
 	{
-		switch((args[0].split("="))[0])
+		String input = this.input.nextLine();
+		switch(input.split("=")[0])
 		{
 		case "X":
-			System.out.println(DetermineSpecNum(Integer.parseInt(args[0].split("=")[1])));
+			System.out.println(DetermineSpecNum(Integer.parseInt(input.split("=")[1])));
 			break;
 		case "Y":
-			System.out.println(GetSpecNum(Integer.parseInt(args[0].split("=")[1])));
+			System.out.println(GetSpecNum(Integer.parseInt(input.split("=")[1])));
 			break;
 		default:
 			System.out.println("Unavailable Input. Exiting...");
